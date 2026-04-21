@@ -1,9 +1,5 @@
 # Karpathy-Inspired Claude Code Guidelines
 
-> Check out my new project [Multica](https://github.com/multica-ai/multica) — an open-source platform for running and managing coding agents with reusable skills.
->
-> Follow me on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
-
 A single reusable skill / `CLAUDE.md` method to make AI agents more careful, simpler, and more goal-driven. It is derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on common LLM coding pitfalls, but the method is useful far beyond software engineering.
 
 English | [Japanese](./README.ja.md) | [Chinese](./README.zh.md)
