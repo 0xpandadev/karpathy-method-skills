@@ -4,9 +4,70 @@
 >
 > Follow me on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
 
-A single `CLAUDE.md` file to improve Claude Code behavior, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
+A single reusable skill / `CLAUDE.md` method to make AI agents more careful, simpler, and more goal-driven. It is derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on common LLM coding pitfalls, but the method is useful far beyond software engineering.
 
-English | [简体中文](./README.zh.md)
+English | [Japanese](./README.ja.md) | [Chinese](./README.zh.md)
+
+## Overview: What This Skill Does
+
+This skill turns an AI assistant from a fast-but-overconfident executor into a more reliable collaborator. It forces the agent to surface assumptions, avoid unnecessary complexity, make surgical changes, and define success criteria before running ahead.
+
+### For Coding
+
+Use this skill when you want an AI coding agent to:
+
+- Clarify ambiguous requirements before implementation
+- Avoid overengineering, speculative abstractions, and bloated APIs
+- Touch only the files and lines required by the task
+- Preserve existing code, comments, style, and unrelated behavior
+- Convert vague requests into verifiable success criteria
+- Implement, test, and iterate until the goal is actually met
+
+Example prompt:
+
+```text
+$karpathy-guidelines
+Fix this bug with the smallest safe change. First state the assumptions,
+success criteria, and verification steps. Do not refactor unrelated code.
+```
+
+Expected effect:
+
+- Smaller diffs
+- Fewer accidental regressions
+- Less AI-generated architecture bloat
+- Better test discipline
+- Clearer tradeoffs before code is changed
+
+### Beyond Coding
+
+The same method also works for non-engineering tasks because many AI failures are not code-specific. They are reasoning failures: hidden assumptions, vague goals, premature answers, unnecessary complexity, and weak verification.
+
+Use this skill for:
+
+- Strategy memos and executive briefings
+- Market, finance, or competitor research
+- Product planning and PRD review
+- Hiring scorecards, operating processes, and internal policies
+- Legal, compliance, or risk-oriented document review
+- Content planning, article editing, and message refinement
+
+Example prompt:
+
+```text
+$karpathy-guidelines
+Review this strategy memo. Do not rewrite immediately. First identify hidden
+assumptions, missing evidence, decision criteria, and the simplest version of
+the recommendation that would still be useful.
+```
+
+Expected effect:
+
+- Clearer assumptions and decision criteria
+- Less generic, over-expanded output
+- More useful pushback when the request is underspecified
+- Better separation between facts, interpretation, and recommendations
+- Outputs that are easier to audit, revise, and trust
 
 ## The Problems
 
